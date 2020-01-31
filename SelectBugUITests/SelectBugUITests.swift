@@ -68,7 +68,7 @@ class SelectBugUITests: XCTestCase {
         self.expectation(for: isSelectedPredicate, evaluatedWith: firstCell)
 
         // to make this expectation fail, changle the value of 'selectionDelay' in the Main View Controller
-        // to 0.9 or lower
+        // to 0.8 or lower
         self.waitForExpectations(timeout: 2.0)
     }
 

@@ -17,8 +17,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     // MARK: - testSwipe POI
     // set selectionDelay to:
     // 1.0 or higher, for all tests to succeed
-    // 0.9 or lower, for a test to fail
-    var selectionDelay: TimeInterval = 1.0
+    // 0.8 or lower, for a test to fail
+    var selectionDelay: TimeInterval = 0.8
 
     override func viewDidLoad() {
         super.viewDidLoad()

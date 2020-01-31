@@ -22,6 +22,9 @@ class NumberedCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        if self.isSelected != selected {
+            NSLog("PrinterViewCell attribute isSelected failed to change to \(selected)")
+        }
     }
 
 }
