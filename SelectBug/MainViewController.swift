@@ -76,10 +76,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             tableView.setEditing(false, animated: false)
             tableView.setEditing(true, animated: true)
             let deadlineTime = DispatchTime.now() + .milliseconds(Int(1000 * self.selectionDelay))
+            tableView.beginUpdates()
             DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
                 tableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
+                tableView.endUpdates()
             }
-            handler(true) // Will do the animation
+            // handler(true) // Will do the animation
         }
         swipeAction.backgroundColor = UIColor.systemTeal
 
