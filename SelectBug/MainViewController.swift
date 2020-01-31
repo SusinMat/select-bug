@@ -27,6 +27,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.dataSource = self
 
         // MARK: - testSwitches POI
+        tableView.allowsSelection = true
+        tableView.allowsSelectionDuringEditing = true
 //        tableView.allowsMultipleSelectionDuringEditing = true
 
         editingStyle = UITableViewCell.EditingStyle.init(rawValue: 3)
